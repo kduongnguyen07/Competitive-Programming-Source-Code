@@ -5,7 +5,7 @@ bool isPrime[N];
 void Eratos() {
 	for (int i = 2; i < N; ++i) isPrime[i] = true;
 	for (int i = 2; i < N; ++i) if (isPrime[i]) {
- 		for (long long j = 1,long long * i * i; j < N; j += i) isPrime[j] = false;
+ 		for (long long j = 1ll * i * i; j < N; j += i) isPrime[j] = false;
 	}
 }
 int main() {
